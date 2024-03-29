@@ -1,18 +1,20 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 
-import { Router } from './Router';
+import { Router } from "./Router";
 
-import './App.css';
+import { AppContextProvider } from "./contexts";
+
+import "./App.css";
 
 
-
-
-const App = () =>  {
+const App = () => {
   return (
-    <BrowserRouter>
+    <AppContextProvider>
+      <BrowserRouter>
         <Router />
-    </BrowserRouter>
+      </BrowserRouter>
+    </AppContextProvider>
   );
 };
 
-export { App } ;
+export { App };
