@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--preto);
+    background: var(--violeta );
     color: var(--cinza);
     padding: 0.25rem 0.5rem;
 }
@@ -17,5 +17,5 @@
 }
 
 .Cabecalho h1 span {
-    color: var(--rosa);
+    color: var(--roxo);
 }

@@ -1,14 +1,20 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import { Botao, CampoTexto, Loading, TIPO_BOTAO } from '../../../components';
-import { useAppContext } from '../../../hooks';
+import { FaRegTrashAlt } from "react-icons/fa";
+import { Botao, CampoTexto, Loading, TIPO_BOTAO } from "../../../components";
+import { useAppContext } from "../../../hooks";
 
-import style from './ListaTarefasItem.module.css';
+import style from "./ListaTarefasItem.module.css";
 
 const ListaTarefasItem = (props) => {
   const { id, nome } = props;
 
-  const { editarTarefa, removerTarefa, loadingEditarTarefa, loadingRemoverTarefa } = useAppContext();
+  const {
+    editarTarefa,
+    removerTarefa,
+    loadingEditarTarefa,
+    loadingRemoverTarefa,
+  } = useAppContext();
 
   const [estaEditando, setEstaEditando] = useState(false);
 
@@ -32,15 +38,13 @@ const ListaTarefasItem = (props) => {
       )}
 
       {!temEdicaoPendente && !estaEditando && (
-          <span onDoubleClick={() => setEstaEditando(true)}>{nome}</span>
+        <span onDoubleClick={() => setEstaEditando(true)}>{nome}</span>
       )}
 
-      {temEdicaoPendente && (
-        <Loading />
-      )}
-      
+      {temEdicaoPendente && <Loading />}
+
       <Botao
-        texto={temRemocaoPendente ? <Loading /> : '-'}
+        texto={temRemocaoPendente ? <Loading /> : <FaRegTrashAlt size={16} />}
         tipo={TIPO_BOTAO.SECUNDARIO}
         onClick={() => removerTarefa(id)}
       />

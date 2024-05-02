@@ -1,5 +1,5 @@
 .Botao {
-    border: 1px solid var(--preto);
+    border: 1px solid var(--violeta );
     padding: 0.25rem 0.75rem;
     color: var(--cinza);
     cursor: pointer;
@@ -10,5 +10,5 @@
 }
 
 .Botao[tipo="secundario"]  {
-    background: var(--rosa);
+    background: var(--roxo);
 }
