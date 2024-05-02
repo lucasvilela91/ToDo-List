@@ -1,11 +1,8 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
 
-import { Router } from "./Router";
+import { AppContextProvider } from './contexts';
 
-import { AppContextProvider } from "./contexts";
-
-import "./App.css";
-
+import { Router } from './Router';
 
 const App = () => {
   return (
@@ -14,7 +11,7 @@ const App = () => {
         <Router />
       </BrowserRouter>
     </AppContextProvider>
-  );
+  )
 };
 
 export { App };
