@@ -17,7 +17,7 @@ https://github.com/lucasvilela91/ToDo-List/assets/152106763/d022ad81-1f8e-4b3c-9
 
 * Axios ( Para fazer as requisicões HTTP )
   
-* React Dom Router ( Permitindo uma navegação mais fluida e sem a necessidade de fazer novas solicitações ao servidor )
+* React Router Dom ( Permitindo uma navegação mais fluida e sem a necessidade de fazer novas solicitações ao servidor )
 
 * Json-server (Capaz de simular uma API Fake )
   
