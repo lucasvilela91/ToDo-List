@@ -82,7 +82,7 @@ export const AppContextProvider = (props) => {
   return (
     <AppContext.Provider 
       value={{
-        nomeUsuario: 'Lucas Vilela',
+        criador: 'Lucas Vilela',
         tarefas,
         adicionarTarefa,
         removerTarefa,

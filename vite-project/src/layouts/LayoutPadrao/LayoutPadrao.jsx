@@ -8,7 +8,7 @@ const LayoutPadrao = () => {
     const { criador } = useAppContext();
     return (
         <>
-            <Cabecalho nomeUsuario="Joana" />
+            <Cabecalho nomeUsuario={criador} />
             <Conteudo>
                 <Outlet />
             </Conteudo>
