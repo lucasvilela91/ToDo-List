@@ -3,3 +3,15 @@
     justify-content: center;
     gap: 0.5rem;
 }
+.FormCriarTarefa {
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 600px) {
+  .FormCriarTarefa {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

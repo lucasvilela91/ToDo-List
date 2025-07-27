@@ -3,3 +3,18 @@
     padding: 0.25rem 0.75rem;
     width: 25rem;
 }
+
+.CampoTexto {
+    flex: 1 1 120px;
+    min-width: 0;
+    max-width: 100%;
+    width: auto;
+    box-sizing: border-box;
+}
+
+@media (min-width: 900px) {
+  .CampoTexto {
+    min-width: 350px;
+    max-width: 600px;
+  }
+}

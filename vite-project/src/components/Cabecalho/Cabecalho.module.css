@@ -19,3 +19,32 @@
 .Cabecalho h1 span {
     color: var(--roxo);
 }
+
+.Cabecalho {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.Cabecalho a {
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+.Cabecalho a:hover {
+    color: var(--roxo);
+}
+.Cabecalho h1 {
+    word-break: break-word;
+}
+@media (max-width: 600px) {
+  .Cabecalho {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .Cabecalho h1 {
+    font-size: 1.1rem;
+  }
+  .Cabecalho > a:last-child {
+    margin-left: auto;
+  }
+}
