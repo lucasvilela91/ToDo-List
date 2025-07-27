@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { FaRegTrashAlt } from "react-icons/fa";
-import { Botao, CampoTexto, Loading, TIPO_BOTAO } from "../../../components";
-import { useAppContext } from "../../../hooks";
+import { FaRegTrashAlt } from 'react-icons/fa';
+import { Botao, CampoTexto, Loading, TIPO_BOTAO } from '../../../components';
+import { useAppContext } from '../../../hooks';
 
-import style from "./ListaTarefasItem.module.css";
+import style from './ListaTarefasItem.module.css';
 
 const ListaTarefasItem = (props) => {
   const { id, nome } = props;
@@ -33,21 +33,28 @@ const ListaTarefasItem = (props) => {
 
   return (
     <li className={style.ListaTarefasItem}>
-      {(estaEditando || temEdicaoPendente) && (
-        <CampoTexto defaultValue={nome} onBlur={onBlurEditarTarefa} autoFocus />
-      )}
+      <div className={style.tarefaConteudo}>
+        {(estaEditando || temEdicaoPendente) && (
+          <CampoTexto
+            defaultValue={nome}
+            onBlur={onBlurEditarTarefa}
+            autoFocus
+          />
+        )}
 
-      {!temEdicaoPendente && !estaEditando && (
-        <span onDoubleClick={() => setEstaEditando(true)}>{nome}</span>
-      )}
+        {!temEdicaoPendente && !estaEditando && (
+          <span onDoubleClick={() => setEstaEditando(true)}>{nome}</span>
+        )}
 
-      {temEdicaoPendente && <Loading />}
-
-      <Botao
-        texto={temRemocaoPendente ? <Loading /> : <FaRegTrashAlt size={16} />}
-        tipo={TIPO_BOTAO.SECUNDARIO}
-        onClick={() => removerTarefa(id)}
-      />
+        {temEdicaoPendente && <Loading />}
+      </div>
+      <div className={style.botaoLixeira}>
+        <Botao
+          texto={temRemocaoPendente ? <Loading /> : <FaRegTrashAlt size={16} />}
+          tipo={TIPO_BOTAO.SECUNDARIO}
+          onClick={() => removerTarefa(id)}
+        />
+      </div>
     </li>
   );
 };

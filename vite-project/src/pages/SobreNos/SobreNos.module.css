@@ -1,3 +1,30 @@
 .sobreNos {
-  margin: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  padding: 2rem 1.5rem;
+  background: var(--branco, #fff);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.sobreNos h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.sobreNos p,
+.sobreNos ul,
+.sobreNos li {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.sobreNos ul {
+  padding-left: 1.5rem;
+}
+
+.sobreNos a {
+  color: var(--violeta, #7c3aed);
+  word-break: break-all;
 }

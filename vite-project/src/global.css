@@ -1,22 +1,24 @@
-:root{
-    --cinza: #EBEBEC;
-    --violeta : #8A89DC;
-    --roxo: #5916D9;
-    --verde: #36B56F;
+:root {
+  --cinza: #e3e8f0;
+  --violeta: #5f6fff;
+  --roxo: #3a3d7c;
+  --verde: #7ed6df;
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: var(--cinza);
+  background: var(--cinza);
 }
 
-body, input, textarea, button {
-    font-size: 1rem;
-    font-family: sans-serif;
+body,
+input,
+textarea,
+button {
+  font-size: 1rem;
+  font-family: sans-serif;
 }
