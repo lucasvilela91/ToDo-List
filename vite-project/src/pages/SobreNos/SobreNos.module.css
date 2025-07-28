@@ -25,6 +25,6 @@
 }
 
 .sobreNos a {
-  color: var(--violeta, #7c3aed);
+  color: var(--preto, #7c3aed);
   word-break: break-all;
 }

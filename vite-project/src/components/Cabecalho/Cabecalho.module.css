@@ -1,38 +1,38 @@
 .Cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--violeta );
-    color: var(--cinza);
-    padding: 0.25rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--preto);
+  color: var(--cinza);
+  padding: 0.25rem 0.5rem;
 }
 
 .Cabecalho a {
-    text-decoration: none;
-    color: var(--cinza);
+  text-decoration: none;
+  color: var(--cinza);
 }
 
 .Cabecalho h1 {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .Cabecalho h1 span {
-    color: var(--roxo);
+  color: var(--roxo);
 }
 
 .Cabecalho {
-    flex-wrap: wrap;
-    gap: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .Cabecalho a {
-    font-size: 1rem;
-    transition: color 0.2s;
+  font-size: 1rem;
+  transition: color 0.2s;
 }
 .Cabecalho a:hover {
-    color: var(--roxo);
+  color: var(--roxo);
 }
 .Cabecalho h1 {
-    word-break: break-word;
+  word-break: break-word;
 }
 @media (max-width: 600px) {
   .Cabecalho {
